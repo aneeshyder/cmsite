@@ -32,7 +32,6 @@ module.exports = {
     // 'gatsby-plugin-offline',
   ],
   plugins: [
-        ...
     {
       resolve: `gatsby-source-contentful`,
       options: {
