@@ -255,6 +255,9 @@ h2 {
   font-size: 1.62671rem;
   line-height: 1.1;
 }
+@media (max-width: 767px){
+  h2 { font-size:1.5rem !important; }
+}
 h3 {
   margin-left: 0;
   margin-right: 0;
@@ -621,25 +624,33 @@ pre tt:after {
     font-size: 100%;
   }
 }
-.container-custom {max-width: 1200px; padding: 0px 15px;margin: 0 auto;}
+.container-custom {max-width: 1200px; padding: 0px 15px;margin: 0 auto;display: inline-block;width: 100%}
 header {background-color: #fff;padding: 35px 0;text-align: center;}
 .company-name {font-size: 30px;font-family: 'Montserrat', sans-serif;font-weight: 600;float: left;}
 .company-name a {text-decoration: none; color: #000;position: relative;text-decoration: none;}
 .company-name a:hover {text-decoration: none;color: #000}
 .company-name a:before {content:'';position: absolute;bottom:0;left:0;width: 0;height: 3px;background-color: #000;}
 .company-name a:hover:before {width: 100%;right: 0;transition: all ease 0.3s}
-header ul.nav {list-style-type: none;display: inline-block;margin:0;padding: 0}
+header ul.nav {list-style-type: none;display: inline-block;margin:0;padding: 9px 0 0 0px}
 header ul.nav li {display: inline-block;    padding: 0px 10px; margin: 0;}
 header ul.nav li a {font-family: 'Montserrat', sans-serif;font-weight: 400;    letter-spacing: 1px; text-decoration: none; color: #000;}
+@media (max-width: 767px){
+  .company-name {width: 100%;}
+  header {padding: 25px 0;}
+}
 
 .banner-main {text-align: center;padding: 150px 0;background-size: cover;background-position: center; position: relative;}
 .banner-main .container-custom {    z-index: 1; position: relative;}
 .banner-main:before {content: '';position: absolute;height: 100%;width: 100%;background-color: rgba(0, 0, 0, 0.5);top:0;bottom: 0;left:0;}
 .banner-main h1 {font-family: 'Montserrat', sans-serif;font-weight: 500;font-size:65px;color:#fff; }
-.banner-main h1 + p {font-family: 'Montserrat', sans-serif;font-weight: normal;font-size: 20px;color:#fff;}
+.banner-main h1 + p {font-family: 'Montserrat', sans-serif;font-weight: normal;font-size: 20px;color:#fff;margin-bottom: 0;}
 .banner-main .blk-btn {background-color: #000;color:#fff;font-family: 'Montserrat', sans-serif;text-decoration: none;padding:10px 15px;text-transform: uppercase;margin-top: 20px;    display: block; width: 160px; margin: 0 auto;border:1px solid #000;transition: all ease 0.3s;}
 .banner-main .blk-btn:hover {background-color: #fff;color:#000;}
+@media (max-width: 767px){
+  main .banner-main h1 {font-size: 40px;}
+  main .banner-main {padding: 50px 0;}
 
+}
 .contact-main .banner-main {background-image:url(../images/contact.jpg) !important;}
 .home-main .banner-main {background-image: url(../images/business.jpg);}
 .work-main .banner-main {background-image: url(../images/work.jpg);}
