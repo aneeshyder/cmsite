@@ -33,7 +33,7 @@ module.exports = {
   ],
   plugins: [
     {
-      resolve: `cms-site`,
+      resolve: `gatsby-source-contentful`,
       options: {
         spaceId: `0twwsl2bn1cm`,
         accessToken: `682c1e5df5aa16e39a0cb1cda68f246113e92ad3e8e0bd190852ec45b0d6e65c`
